@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
+project(Encryption_Algorithm C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(.)
+
+add_executable(Encryption_Algorithm
+        encryption/encryption.c
+        header.h
+        main.c
+        decryption/decryption.c)
