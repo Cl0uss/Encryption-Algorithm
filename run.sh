@@ -17,6 +17,6 @@ trap 'rm -f -- "$executable"' EXIT
 cmake -S "$project_dir" -B "$build_dir"
 cmake --build "$build_dir" --target Encryption_Algorithm
 
-# The current C implementation resolves input paths relative to ../.
-cd -- "$build_dir"
+cd -- "$project_dir"
+
 "$executable" "$@" "$filename"
