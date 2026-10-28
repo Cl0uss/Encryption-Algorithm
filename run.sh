@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if (( $# < 2 )); then
-    printf 'Usage: %s [filename] [argv...]\nExample: %s sample.txt -e\n' "$0" "$0" >&2
+    printf 'Usage: %s [filename] [argv...]\nExample: [%s sample.txt -e] [%s sample.txt -d key.bin]\n' "$0" "$0" >&2
     exit 2
 fi
 

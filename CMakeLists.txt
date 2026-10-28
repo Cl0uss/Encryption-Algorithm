@@ -9,4 +9,6 @@ add_executable(Encryption_Algorithm
         encryption/encryption.c
         header.h
         main.c
-        decryption/decryption.c)
+        decryption/decryption.c
+        encryption/keyLogic.c
+        encryption/bitManioulation.c)
